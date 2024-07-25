@@ -1,0 +1,85 @@
+import { NavLink } from 'react-router-dom';
+
+
+import style from './Nav.module.scss';
+
+import pan from '../../assets/icons/nav/nav_pan.svg';
+import chef from '../../assets/icons/nav/nav_chef.svg';
+import tomate from '../../assets/icons/nav/nav_tomat.svg'
+import line from '../../assets/icons/nav/nav_line.svg';
+import lineVertical from '../../assets/icons/nav/nav_line_vertical.svg';
+import info from '../../assets/icons/nav/nav_info.svg';
+import logIn from '../../assets/icons/nav/nav_log_in.svg';
+import CustomSelect from '../../UI/Select/CustomSelect';
+
+
+
+const navItems = [
+    { label: 'Cooking Classes', to: '/cooking', icon: pan },
+    { label: 'Become a Chef', to: '/chef', icon: chef },
+    { label: 'Group Cooking', to: '/group', icon: tomate }
+]
+
+// const languages = [
+//     { value: 'EN', label: 'English' },
+//     { value: 'FR', label: 'German' },
+//     { value: 'FR', label: 'Chinese' },
+//     { value: 'FR', label: 'Italian' },
+//     { value: 'DE', label: 'Hebrew' }
+// ]
+
+// const currencies = [
+//     { value: 'USD', label: 'USD' },
+//     { value: 'EUR', label: 'EUR' },
+//     { value: 'UAH', label: 'UAH' },
+//     { value: 'GBR', label: 'GBR' },
+//     { value: 'CHF', label: 'CHF' }
+// ]
+
+export default function Nav() {
+    return (
+        <>
+
+            < nav >
+                <div className={style.container}>
+                    <div className={style.nav}>
+                        <h3 className={style.nav__logo}>COOK</h3>
+
+                        <img src={line} alt="line" className={style.nav__icon} />
+
+                        <ul className={style.nav__list}>
+                            {navItems.map((item, index) => (
+                                <li key={index} className={style.nav__list_item}>
+                                    <NavLink to={item.to} className={style.link}>
+                                        <img
+                                            src={item.icon}
+                                            alt={item.label}
+                                            className={style.link__icon}
+                                        />
+                                        {item.label}
+                                    </NavLink>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div className={style.nav__options}>
+                        <CustomSelect />
+                        <img src={lineVertical} alt='Line Vertical' />
+                        <img src={info} alt='Icon info' className={style.nav__icon_info} />
+                        <img src={lineVertical} alt='Line Vertical' />
+
+                        <button>
+                            Log In
+                            <img src={logIn} alt='Log In' className={style.btn__login} />
+                        </button>
+                    </div>
+                </div>
+            </nav >
+            <div className={style.border}></div>
+        </>
+
+
+    );
+
+}

@@ -1,0 +1,14 @@
+@import '../../styles/var.scss';
+
+.option {
+    padding: 5px;
+    transition: 300ms;
+    background-color: white;
+    width: 150px;
+    font-family: $font-primary-regul;
+    font-weight: 500;
+    font-size: 16px;
+}
+.option:hover {
+    background-color: $primary-bg-color-light;
+}
