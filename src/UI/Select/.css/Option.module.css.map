@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"Option.module.css"}
+{"version":3,"sources":["../Option.module.scss","../../../styles/var.scss"],"names":[],"mappings":"AAEA,QACI,WAAA,CACA,gBAAA,CACA,qBAAA,CACA,WAAA,CACA,4BCKgB,CDJhB,eAAA,CACA,cAAA,CAEJ,cACI,wBCXqB","file":"Option.module.css"}

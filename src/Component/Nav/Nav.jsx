@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-
+import CustomSelect from '../../UI/Select/CustomSelect';
 
 import style from './Nav.module.scss';
 
@@ -9,32 +9,12 @@ import tomate from '../../assets/icons/nav/nav_tomat.svg'
 import line from '../../assets/icons/nav/nav_line.svg';
 import lineVertical from '../../assets/icons/nav/nav_line_vertical.svg';
 import info from '../../assets/icons/nav/nav_info.svg';
-import logIn from '../../assets/icons/nav/nav_log_in.svg';
-import CustomSelect from '../../UI/Select/CustomSelect';
-
-
 
 const navItems = [
     { label: 'Cooking Classes', to: '/cooking', icon: pan },
     { label: 'Become a Chef', to: '/chef', icon: chef },
     { label: 'Group Cooking', to: '/group', icon: tomate }
 ]
-
-// const languages = [
-//     { value: 'EN', label: 'English' },
-//     { value: 'FR', label: 'German' },
-//     { value: 'FR', label: 'Chinese' },
-//     { value: 'FR', label: 'Italian' },
-//     { value: 'DE', label: 'Hebrew' }
-// ]
-
-// const currencies = [
-//     { value: 'USD', label: 'USD' },
-//     { value: 'EUR', label: 'EUR' },
-//     { value: 'UAH', label: 'UAH' },
-//     { value: 'GBR', label: 'GBR' },
-//     { value: 'CHF', label: 'CHF' }
-// ]
 
 export default function Nav() {
     return (
@@ -69,17 +49,24 @@ export default function Nav() {
                         <img src={info} alt='Icon info' className={style.nav__icon_info} />
                         <img src={lineVertical} alt='Line Vertical' />
 
-                        <button>
+                        <button className={style.dark__btn}>
                             Log In
-                            <img src={logIn} alt='Log In' className={style.btn__login} />
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                strokeWidth="1.5"
+                                stroke="currentColor"
+                                className={style.dark__btn_login}
+                            >
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"></path>
+                            </svg>
                         </button>
                     </div>
                 </div>
             </nav >
             <div className={style.border}></div>
         </>
-
-
     );
 
 }
