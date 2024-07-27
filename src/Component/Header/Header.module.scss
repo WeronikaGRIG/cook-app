@@ -8,6 +8,58 @@ header{
 
 .container {
     display: flex;
-    justify-content:space-between;
-    padding: 25px 0;
+    justify-content: flex-start;
+    padding: 70px 0;
+    gap: 20px;
+}
+
+.content__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+    &_title{
+        width: 600px;
+        font-family: $font-spans;
+        font-size: 61px;
+        color:$text-color;
+        .span{
+            font-family: $font-spans;
+            color:$text-color-logo;
+        }
+    }
+    &_descr{
+        width: 600px;
+        font-family: $font-primary-regul;
+        font-size: 20px;
+        line-height: 160%;
+        color:$text-color-secondary;
+    }
+
+    &_more{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        .text{
+            width: 600px;
+            font-family: $font-primary-regul;
+            font-size: 20px;
+            line-height: 160%;
+            color:$text-color-secondary;
+        }
+    }
+
+    .btn__wrapper{
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.content__right{
+    display: flex;
+    align-items: center;
+    &_picture{
+        border-radius: 32px;
+    }
 }

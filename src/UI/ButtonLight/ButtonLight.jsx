@@ -5,10 +5,10 @@ import style from './ButtonLight.module.scss';
 export default function ButtonLight({ text, icon, onClick, className }) {
     return (
         <button
-            className={`${style.dark__btn} ${className}`}
+            className={`${style.light__btn} ${className}`}
             onClick={onClick}>
             {text}
-            {icon && <span className={style.dark__btn_login}>{icon}</span>}
+            {icon && <span className={style.light__btn_login}>{icon}</span>}
         </button>
     );
 }

@@ -1,0 +1,40 @@
+@import '../../styles/var.scss';
+@import '../../styles/templates.scss';
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border: 1px solid $primary-color-line;
+    border-radius: 16px;
+    background-color: $inner-bg-color;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px 75px;
+    margin: 13px auto;
+    &__quantity{
+        display: flex;
+        align-items: center;
+        font-family: $font-secondary-bold;
+        font-weight: 700;
+        font-size: 40px;
+        color: $text-color-logo;
+    }
+    .symbol__star{
+        font-size: 30px;
+        font-family: $font-secondary-bold;
+    }
+    &__description{
+        font-family: $font-primary-regul;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+}
