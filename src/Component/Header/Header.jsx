@@ -1,6 +1,17 @@
 import style from './Header.module.scss';
 
+import play from '../../assets/icons/header/play_circle.svg';
+import hero from '../../assets/img/hero.png';
+import ButtonDark from '../../UI/ButtonDark/ButtonDark';
+import ButtonLight from '../../UI/ButtonLight/ButtonLight';
+
 export default function Header() {
+
+    const handleClick = () => {
+        alert('Button clicked!');
+    };
+
+
     return (
         <>
             <header>
@@ -13,18 +24,23 @@ export default function Header() {
                             Experience the joy of cooking in a whole new way with our engaging online cooking classes. Learn from the chefs, share your unique culinary knowledge, and join our growing foodie community. With COOK, learning, and teaching becomes a shared passion.
                         </p>
                         <div className={style.descrMore}>
-                            <img src="" alt="" className={style.iconPlay} />
+                            <img src={play} alt="Play Circle" className={style.iconPlay} />
                             <p className={style.text}>Learn more in the COOK video</p>
                         </div>
-                        {/* отдельный компоненты ui */}
+
                         <div className={style.btnWrapper}>
-                            <button>Find Your Tutor</button>
-                            <button>Join Our Chefs</button>
+                            <ButtonDark
+                                text='Find Your Tutor'
+                                onClick={handleClick} />
+
+                            <ButtonLight
+                                text='Join Our Chefs'
+                                onClick={handleClick} />
                         </div>
                     </div>
 
                     <div className={style.contentRight}>
-                        <img src="" alt="" />
+                        <img src={hero} alt="Woman made cook" />
                     </div>
 
                     {/* кастомный компоненты ui */}

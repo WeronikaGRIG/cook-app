@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import CustomSelect from '../../UI/Select/CustomSelect';
 import ButtonDark from '../../UI/ButtonDark/ButtonDark';
+import LoginIcon from '../../UI/LoginIcon/LoginIcon';
 
 import style from './Nav.module.scss';
 
@@ -12,6 +13,7 @@ import lineVertical from '../../assets/icons/nav/nav_line_vertical.svg';
 import info from '../../assets/icons/nav/nav_info.svg';
 
 
+
 const navItems = [
     { label: 'Cooking Classes', to: '/cooking', icon: pan },
     { label: 'Become a Chef', to: '/chef', icon: chef },
@@ -19,8 +21,14 @@ const navItems = [
 ]
 
 export default function Nav() {
+
+    const handleClick = () => {
+        alert('Button clicked!');
+    };
+
     return (
         <>
+
             < nav >
                 <div className={style.container}>
                     <div className={style.nav}>
@@ -49,7 +57,10 @@ export default function Nav() {
                         <img src={lineVertical} alt='Line Vertical' />
                         <img src={info} alt='Icon info' className={style.nav__icon_info} />
                         <img src={lineVertical} alt='Line Vertical' />
-                        <ButtonDark />
+                        <ButtonDark
+                            text='Log In'
+                            icon={<LoginIcon />}
+                            onClick={handleClick} />
                     </div>
                 </div>
             </nav >

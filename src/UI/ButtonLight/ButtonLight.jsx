@@ -1,7 +1,8 @@
 import PropTypes from 'prop-types';
-import style from './ButtonDark.module.scss';
+import style from './ButtonLight.module.scss';
 
-export default function ButtonDark({ text, icon, onClick, className }) {
+
+export default function ButtonLight({ text, icon, onClick, className }) {
     return (
         <button
             className={`${style.dark__btn} ${className}`}
@@ -12,17 +13,15 @@ export default function ButtonDark({ text, icon, onClick, className }) {
     );
 }
 
-ButtonDark.PropTypes = {
+ButtonLight.PropTypes = {
     text: PropTypes.string.isRequired,
     icon: PropTypes.node,
     onClick: PropTypes.func,
     className: PropTypes.string,
 };
 
-ButtonDark.defaultProps = {
+ButtonLight.defaultProps = {
     icon: null,
     onClick: () => { },
     className: '',
 };
-
-
