@@ -4,7 +4,7 @@ import play from '../../assets/icons/header/play_circle.svg';
 import hero from '../../assets/img/hero.png';
 import ButtonDark from '../../UI/ButtonDark/ButtonDark';
 import ButtonLight from '../../UI/ButtonLight/ButtonLight';
-import RatingCard from '../../UI/RatingCard/RatingCard';
+
 
 export default function Header() {
 
@@ -44,8 +44,6 @@ export default function Header() {
                     </div>
 
                 </div>
-
-                <RatingCard />
             </header>
         </>
     );

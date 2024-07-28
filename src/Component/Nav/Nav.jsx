@@ -28,7 +28,6 @@ export default function Nav() {
 
     return (
         <>
-
             < nav >
                 <div className={style.container}>
                     <div className={style.nav}>

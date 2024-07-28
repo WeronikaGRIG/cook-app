@@ -1,7 +1,21 @@
 @import '../../styles/var.scss';
 @import '../../styles/templates.scss';
 
+section{
+    width: $container-width;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+    
+
+}
+
 .wrapper {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,6 +23,24 @@
     border: 1px solid $primary-color-line;
     border-radius: 16px;
     background-color: $inner-bg-color;
+}
+
+.wrapper::before,
+.wrapper::after {
+    content: '';
+    position: absolute;
+    width: 50vw;
+    border-bottom: 2px solid $primary-color-line;
+}
+
+.wrapper::before {
+    left: 0;
+    transform: translateX(-100%);
+}
+
+.wrapper::after {
+    right: 0;
+    transform: translateX(100%);
 }
 
 .card{
@@ -35,6 +67,7 @@
         font-family: $font-primary-regul;
         font-weight: 400;
         font-size: 20px;
+        color: $text-color-secondary;
     }
-
 }
+

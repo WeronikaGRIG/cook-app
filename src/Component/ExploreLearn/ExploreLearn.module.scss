@@ -1,0 +1,44 @@
+@import '../../styles/var.scss';
+@import '../../styles/templates.scss';
+
+section{
+    width: $container-width;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.entry{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 10px;
+        .figure{
+            display: block;
+            width: 46px;
+            height: 34px;
+        }
+        .title{
+            font-family: $font-secondary-bold;
+            font-weight: 700;
+            font-size: 50px;
+            color: $text-color;
+            }
+
+        &_text{
+            font-family: $font-primary-regul;
+            font-weight: 500;
+            font-size: 20px;
+            color: $text-color-secondary;
+        }
+    }
+
+}

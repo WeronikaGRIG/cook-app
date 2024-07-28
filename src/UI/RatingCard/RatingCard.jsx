@@ -10,24 +10,29 @@ const cards = [
 
 export default function RatingCard() {
     return (
-        <div className={style.wrapper}>
-            {cards.map((card, index) => (
-                <div className={style.card} key={index}>
-                    <h2
-                        className={style.card__quantity}>
-                        {card.quantity}
-                        {card.symbol === '&#9733;' ? (
-                            <span dangerouslySetInnerHTML={{ __html: card.symbol }} className={style.symbol__star} />
-                        ) : (
-                            card.symbol
-                        )}
-                    </h2>
-                    <p
-                        className={style.card__description}>
-                        {card.description}
-                    </p>
+        <section>
+            <div className={style.container}>
+                <div className={style.wrapper}>
+                    {cards.map((card, index) => (
+                        <div className={style.card} key={index}>
+                            <h2
+                                className={style.card__quantity}>
+                                {card.quantity}
+                                {card.symbol === '&#9733;' ? (
+                                    <span dangerouslySetInnerHTML={{ __html: card.symbol }} className={style.symbol__star} />
+                                ) : (
+                                    card.symbol
+                                )}
+                            </h2>
+                            <p
+                                className={style.card__description}>
+                                {card.description}
+                            </p>
+                        </div>
+                    ))}
                 </div>
-            ))}
-        </div>
+            </div>
+        </section>
+
     );
 }
