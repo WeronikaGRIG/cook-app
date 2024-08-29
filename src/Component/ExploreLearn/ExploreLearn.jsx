@@ -8,6 +8,7 @@ import figure from '../../assets/icons/exploreLearn/figure.svg';
 import search from '../../assets/icons/exploreLearn/search.svg';
 
 
+
 export default function ExploreLearn() {
   return (
     <section>
@@ -27,7 +28,6 @@ export default function ExploreLearn() {
         </div>
 
         <ExploreCard />
-
       </div>
     </section>
   );
