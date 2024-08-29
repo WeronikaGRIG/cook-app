@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Bakery",
+    "description": "Master baking: from rustic bread to delicate pastries",
+    "icon": "src/assets/icons/exploreLearn/bakery.svg"
+  },
+  {
+    "title": "Vegan Cooking",
+    "description": "Create delicious, nutritious meals with plant-based ingredients",
+    "icon": "src/assets/icons/exploreLearn/vegan.svg"
+  },
+  {
+    "title": "Seafood Mastery",
+    "description": "Dive into seafood: from grilling fish to creating sushi",
+    "icon": "src/assets/icons/exploreLearn/seafood.svg"
+  },
+  {
+    "title": "BBQ & Grilling",
+    "description": "Fire up your skills with mouth-watering BBQ dishes",
+    "icon": "src/assets/icons/exploreLearn/grilling.svg"
+  },
+  {
+    "title": "Wine Pairing",
+    "description": "Enhance culinary experiences by mastering wine pairing",
+    "icon": "src/assets/icons/exploreLearn/wine.svg"
+  },
+  {
+    "title": "Cake Decorating",
+    "description": "Unleash creativity with cake decorating techniques",
+    "icon": "src/assets/icons/exploreLearn/cake.svg"
+  }
+]
