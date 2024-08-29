@@ -1,0 +1,17 @@
+[
+  {
+    "label": "Cooking Classes",
+    "to": "/cooking",
+    "src": "src/assets/icons/nav/nav_pan.svg"
+  },
+  {
+    "label": "Become a Chef",
+    "to": "/chef",
+    "src": "src/assets/icons/nav/nav_chef.svg "
+  },
+  {
+    "label": "Group Cooking",
+    "to": "/group",
+    "src": "src/assets/icons/nav/nav_tomat.svg"
+  }
+]

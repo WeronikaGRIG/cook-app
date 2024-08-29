@@ -10,7 +10,7 @@
   border-radius: 16px;
   border: 1px solid $primary-color-line;
   background-color: $white-bg;
-  transition: transform .6s ease;
+  transition: transform .6s ease, background-color .6s ease;
   box-shadow: 0 0 10px 0px rgba(255, 219, 184, 1);
   &__row{
     display: flex;
@@ -36,6 +36,9 @@
     transform: scale(1.03);
   }
   &:hover .card__row{
+    color: $text-color-white;
+  }
+  &:hover .card__row path{
     color: $text-color-white;
   }
 }
