@@ -1,0 +1,17 @@
+[
+  {
+    "icon": "src/assets/icons/benefits/chef.svg",
+    "title": "Expert Chefs",
+    "description": "Learn from the best. Our platform features professional chefs from around the world who bring their unique experiences and culinary secrets to every class."
+  },
+  {
+    "icon": "src/assets/icons/benefits/pig.svg",
+    "title": "Save Time and Money",
+    "description": "Embrace the convenience of learning from home. Save time on travel, reduce dining-out expenses, and master your kitchen with our online cooking classes."
+  },
+  {
+    "icon": "src/assets/icons/benefits/coocing.svg",
+    "title": "Accessible Cooking",
+    "description": "Start your culinary journey with ease. Our user-friendly platform makes navigation simple, letting you focus on learning and enjoying your online cooking classes."
+  }
+]

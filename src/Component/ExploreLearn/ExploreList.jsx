@@ -22,7 +22,7 @@ export default function ExploreList({ title, description, icon }) {
     <li className={style.card}
       onMouseMove={handleHover}
       onMouseLeave={handleLeave}>
-      <img className={style.card__icon} src={icon} alt="Bakery" />
+      <img className={style.card__icon} src={icon} alt={title} />
       <div className={style.card__row}>
         <h2 className={style.card__row_title}>{title}</h2>
         <img className={style.icon} src={arrowIcon} alt="Arrow up right" />

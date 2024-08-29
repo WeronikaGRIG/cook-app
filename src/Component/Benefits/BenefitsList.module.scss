@@ -1,0 +1,24 @@
+@import '../../styles/var.scss';
+@import '../../styles/templates.scss';
+@import '../../styles/reset.scss';
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 27px;
+  &__icon{
+    padding: 25px;
+    border-radius: 50%;
+    background-color: $primary-bg-color;
+  }
+  &__title{
+    font-size: 32px;
+  }
+  &__descr{
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
